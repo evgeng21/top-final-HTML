@@ -1,0 +1,252 @@
+.cardList {
+    margin-top: 50px;
+
+    .specialOffer {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: red;
+        }
+    }
+
+    .cardListWrapper {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+            margin-bottom: 30px;
+            width: 245px;
+            height: 322px;
+            position: relative;
+            border: 1px solid gray;
+            border-radius: 10px;
+
+            .topSellerImg {
+                position: absolute;
+                top: 13px;
+            }
+
+            .topSellerText {
+                position: absolute;
+                top: 17px;
+                left: 15px;
+                color: aliceblue;
+                font-size: 12px;
+            }
+
+            .cardFavorite {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 23px;
+                height: 23px;
+            }
+
+            .titleImg {
+                margin-top: 33px;
+                text-align: center;
+            }
+
+            .cardInfo {
+                padding: 0 10px;
+
+                .cardTitle {
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+
+                .cardDescription {
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+
+                .cardTags {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        font-weight: 300;
+                        font-size: 12px;
+                        text-decoration: underline;
+                    }
+
+                    .inStock {
+                        color: #219653;
+                    }
+                }
+
+                .cardPrice {
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: baseline;
+                    gap: 5px;
+
+                    .cardAmount {
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+
+                    .cardCurrency {
+                        font-size: 10px;
+                    }
+                }
+
+                .cardSell {
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    .cardClick {
+                        width: 158px;
+                        height: 33px;
+                        background-color: #5661CB;
+                        color: aliceblue;
+                        border: none;
+                        outline: none;
+                        border-radius: 7px;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+
+                    .cardThrash {
+                        width: 55px;
+                        height: 33px;
+                        border: 1px solid #5661CB;
+                        outline: none;
+                        border-radius: 7px;
+                        cursor: pointer;
+
+                        img {
+                            width: 16px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (width < 1440px) {
+    .cardList {
+
+        .cardListWrapper {
+            padding: 0;
+
+            .card {
+
+                .cardSell {
+
+                    .cardClick {
+                        width: 142px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@media (width < 1000px) {}
+
+@media (width < 768px) {
+    .cardList {
+
+        .specialOffer {
+            justify-content: center;
+
+            a {
+                display: none;
+            }
+        }
+
+        .cardListWrapper {
+
+            .card {
+                margin-bottom: 30px;
+                width: 132px;
+                height: 195px;
+                border: none;
+
+                .topSellerImg {
+                    display: none;
+                }
+
+                .topSellerText {
+                    display: none;
+                }
+
+                .cardFavorite {
+                    display: none;
+                }
+
+                .titleImg {
+                    width: 136px;
+                    text-align: center;
+                }
+
+                .cardInfo {
+                    padding: 0;
+
+                    .cardTitle {
+                        font-size: 12px;
+                    }
+
+                    .cardDescription {
+                        display: none;
+                    }
+
+                    .cardTags {
+
+                        p {
+                            font-size: 10px;
+                        }
+
+                        .inStock {
+                            display: none;
+                        }
+                    }
+
+                    .cardPrice {
+                        gap: 5px;
+
+                        .cardAmount {
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+
+                        .cardCurrency {
+                            font-size: 10px;
+                        }
+                    }
+
+                    .cardSell {
+
+                        .cardClick {
+                            width: 132px;
+                            height: 31px;
+                            font-size: 12px;
+                        }
+
+                        .cardThrash {
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (width < 480px) {}

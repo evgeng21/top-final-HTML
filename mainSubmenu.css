@@ -1,0 +1,145 @@
+.submenu {
+    margin: 0 auto;
+    width: 95%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .submenuCatalog a {
+        width: 300px;
+        height: 40px;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        border-radius: 4px;
+        background-color: #5661CB;
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .promotion a {
+        color: #D41A36;
+        text-decoration: none;
+    }
+
+    .submenuInput {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 248px;
+        height: 40px;
+
+        input {
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        img {
+            padding-right: 7px;
+        }
+    }
+
+    .submenuItem {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1439px) {
+    .submenu {
+
+        .submenuCatalog a {
+            width: 230px;
+            gap: 22px;
+        }
+
+        .submenuInput {
+            width: 205px;
+
+            input {
+                font-size: 14px;
+            }
+        }
+
+        .submenuItem {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .submenu {
+
+        .submenuCatalog a {
+            width: 205px;
+            gap: 22px;
+        }
+
+        .promotion a {
+            color: aliceblue;
+        }
+
+        .submenuInput {
+            display: none;
+        }
+
+        .submenuItem {
+            padding: 0 46px;
+            display: flex;
+            height: 40px;
+            align-items: center;
+            background-color: #5661CB;
+            border-radius: 5px;
+            color: aliceblue;
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .submenu {
+        .submenuCatalog {
+            a {
+                width: 460px;
+            }
+        }
+
+        .promotion a {
+            display: none;
+        }
+
+        .submenuInput {
+            display: none;
+        }
+
+        .submenuItem {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .submenu {
+        .submenuCatalog {
+            a {
+                width: 306px;
+            }
+        }
+
+        .promotion a {
+            display: none;
+        }
+
+        .submenuInput {
+            display: none;
+        }
+
+        .submenuItem {
+            display: none;
+        }
+    }
+}
